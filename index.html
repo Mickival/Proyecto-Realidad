@@ -6,8 +6,26 @@
     <title>Unity WebGL Player | My project</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* Agrega margen superior para evitar que el recuadro Unity quede debajo del navbar */
+      #unity-container {
+        margin-top: 60px;
+      }
+    </style>
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #2ECC71;">
+      <div class="container">
+        <span class="navbar-brand mx-auto" style="font-weight: bold;">
+          <span style="color: #ffffff;">Electro</span><span style="color: #000000;">Store</span>
+        </span>
+      </div>
+    </nav>
+
+    <!-- Unity Container -->
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -118,5 +136,9 @@
       document.body.appendChild(script);
 
     </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
